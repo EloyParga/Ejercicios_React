@@ -1,0 +1,64 @@
+.tw-followCard{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+.tw-followCard-header{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tw-followCard-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-followCard-infoUserName{
+    opacity: .6;
+}
+
+.tw-followCard-avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 10000px;
+}
+
+.tw-followCard-button{
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+.tw-followCard-button.is-following{
+    border: 1px solid red;
+}
+
+.tw-followCard-button:hover{
+    background-color: #09f;
+    transition: .3s ease background-color;
+}
+
+.tw-followCard-button.is-following:hover{
+    background-color: tomato;
+    
+}
+
+/* Estilo del texto del botón cuando el mouse está sobre él */
+.tw-followCard-button.is-following:hover span {
+    display: none; /* Oculta el texto original en hover */
+  }
+
+.tw-followCard-button.is-following:hover:after {
+    content: "Dejar de seguir"; /* Agrega el nuevo texto en hover */
+    display: inline-block; /* Muestra el nuevo texto */
+  }
+
+
